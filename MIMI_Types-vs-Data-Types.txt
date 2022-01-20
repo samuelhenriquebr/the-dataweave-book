@@ -1,0 +1,18 @@
+%dw 2.0
+output application/dw
+ns jerney https://www.jerney.io
+
+var city = "Denver"
+---
+{
+    jerney#person @(id: 1): {
+        location: city,
+        age: 28+1
+    }
+}
+
+###############################################
+%dw 2.0
+output application/dw
+---
+payload
