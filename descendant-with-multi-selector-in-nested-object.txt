@@ -1,0 +1,19 @@
+%dw 2.0
+output application/dw
+var data = [
+    {
+        key: "hello",
+        key: [
+            {key: 1, key: 2}
+        ]
+    },
+    {
+        key: [
+            {key: 3},
+            {key: 4}
+        ],
+        key: "goodbye"
+    }
+]
+---
+data..*key

@@ -1,0 +1,23 @@
+%dw 2.0
+output application/dw
+var arr = [
+    {
+        name: "Alexis",
+        age: 42
+    },
+    {
+        name: "Raj",
+        age: 35
+    },
+    {
+        name: "Josh",
+        details: {age: 29},
+        info: {
+            details: {
+                age: 55
+            }
+        }
+    }
+]
+---
+arr..age

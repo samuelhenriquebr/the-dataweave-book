@@ -1,0 +1,10 @@
+%dw 2.0
+output application/dw
+var obj = {
+    name: "Alexis",
+    age: 42
+}
+
+var key = "name"
+---
+obj[key]
